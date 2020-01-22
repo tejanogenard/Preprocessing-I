@@ -177,18 +177,56 @@ body {
   display: flex;
   justify-content: space-evenly;
   height: 50vh;
-  background-color: blueviolet;
 }
 .Middle-content .Intro {
-  background-color: red;
   width: 50%;
+}
+.Middle-content .Intro p {
+  padding: 2rem;
+  font-size: 1.9rem;
 }
 .Middle-content .Skills {
-  background-color: royalblue;
   width: 50%;
 }
+.Middle-content .Skills li {
+  padding: 2rem;
+  font-size: 1.5rem;
+}
 .Middle-content h2 {
-  background-color: brown;
+  background-color: #D8BFD8;
+  display: flex;
+  justify-content: center;
   font-size: 3rem;
   margin: 3%;
+}
+.Bottom-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 30vh;
+}
+.Bottom-content h2 {
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 3%;
+}
+.Bottom-content p {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+.Main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: springgreen;
+  align-items: center;
+}
+.Main-footer h2 {
+  padding: 1rem;
+  font-size: 2rem;
 }
