@@ -173,3 +173,22 @@ body {
 .Top-content h1 .description {
   font-size: 2.5rem;
 }
+.Middle-content {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
+  background-color: blueviolet;
+}
+.Middle-content .Intro {
+  background-color: red;
+  width: 50%;
+}
+.Middle-content .Skills {
+  background-color: royalblue;
+  width: 50%;
+}
+.Middle-content h2 {
+  background-color: brown;
+  font-size: 3rem;
+  margin: 3%;
+}
