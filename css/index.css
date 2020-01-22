@@ -134,3 +134,19 @@ html,
 body {
   height: 100%;
 }
+.main-header {
+  width: 50%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+}
+.main-header nav {
+  width: 25%;
+  background-color: purple;
+}
+.main-header nav a {
+  background-color: chocolate;
+  justify-content: space-around;
+}
