@@ -158,10 +158,10 @@ p {
   font-family: 'Roboto Mono', monospace;
 }
 .main-header {
-  width: 100%;
-  height: 5rem;
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 5rem;
   align-items: center;
   background-color: #B0E0E6;
 }
@@ -196,12 +196,22 @@ p {
 .Top-content h1 .description {
   font-size: 2.5rem;
 }
+@media (max-width: 500px) {
+  .Top-content .myPic {
+    display: none;
+  }
+  .Top-content .description {
+    font-size: 1rem;
+  }
+}
 .Middle-content {
   display: flex;
   justify-content: space-evenly;
   height: 50vh;
 }
 .Middle-content .Intro {
+  border: 2px dotted orange;
+  padding: 2%;
   width: 50%;
 }
 .Middle-content .Intro p {
@@ -209,6 +219,8 @@ p {
   font-size: 1.9rem;
 }
 .Middle-content .Skills {
+  border: 2px dotted orange;
+  padding: 2%;
   width: 50%;
 }
 .Middle-content .Skills li {
@@ -216,24 +228,34 @@ p {
   font-size: 1.5rem;
 }
 .Middle-content h2 {
-  background-color: #D8BFD8;
   display: flex;
   justify-content: center;
+  background-color: #B0E0E6;
   font-size: 3rem;
   margin: 3%;
 }
+@media (max-width: 500px) {
+  .Middle-content .Intro p {
+    font-size: 0.9rem;
+  }
+  .Middle-content .Skills li {
+    font-size: 0.9rem;
+  }
+}
 .Bottom-content {
+  border: 2px dotted orange;
+  padding: 2%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 30vh;
 }
 .Bottom-content h2 {
-  background-color: salmon;
+  background-color: #B0E0E6;
   display: flex;
   justify-content: center;
-  font-size: 3rem;
-  margin: 3%;
+  font-size: 2rem;
+  margin: 2%;
 }
 .Bottom-content p {
   padding: 1%;
@@ -242,6 +264,11 @@ p {
   text-align: center;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .Bottom-content p {
+    font-size: 1rem;
+  }
+}
 .Main-footer {
   display: flex;
   flex-direction: column;
@@ -249,7 +276,7 @@ p {
   align-items: center;
 }
 .Main-footer h2 {
-  background-color: springgreen;
+  background-color: #B0E0E6;
   padding: 1rem;
   font-size: 2rem;
 }
