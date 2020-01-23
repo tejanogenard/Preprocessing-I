@@ -48,6 +48,9 @@ table {
 	border-spacing: 0;
 }
 
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap');
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -57,6 +60,20 @@ html, body {
 height: 100%;
 }
 
+@title-fonts: 'Roboto', sans-serif;
+@p-fonts: 'Roboto Mono', monospace;
+@title-size: 7rem;
+
+h1{
+	font-family: @title-fonts;
+}
+
+h2{
+	font-family: @title-fonts;
+
+p{
+	font-family: @p-fonts;
+}
 
 .main-header{
 	width: 100%;
@@ -90,7 +107,7 @@ height: 100%;
 		}
 
 		h1{
-			font-size: 7rem;
+			font-size: @title-size;
 			margin: 3%;
 
 		.sub-head{
@@ -102,6 +119,7 @@ height: 100%;
 
 		.description{
 			font-size: 2.5rem;
+			
 		}
 		
 	}
@@ -167,12 +185,16 @@ height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: springgreen;
 	align-items: center;
 
 	h2{
+		background-color: springgreen;
 		padding: 1rem;
 		font-size: 2rem;
 	}
 
+	form{
+		padding: 1rem;
+		font-size: 1.5rem;
+	}
 }//end of footer
